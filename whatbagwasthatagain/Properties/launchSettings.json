@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Client": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "commandLineArgs": "$(VINTAGE_STORY)/Vintagestory.dll --tracelog --addModPath \"C:\\Users\\heatb\\Desktop\\game dev\\_vintage story modding\\mods\\whatbagwasthatagain\\whatbagwasthatagain/bin/$(Configuration)/Mods\"\r\n-openWorld=\"modsamplestest\" ",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    },
+    "Server": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "commandLineArgs": "$(VINTAGE_STORY)/VintagestoryServer.dll --tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    }
+  }
+}
