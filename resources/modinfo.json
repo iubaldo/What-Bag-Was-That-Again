@@ -6,8 +6,8 @@
         "Landar"
     ],
     "description": "Shakes the bag slot containing the item the player is currently hovering over.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
-        "game": "1.18.8"
+        "game": "1.18.0"
     }
 }

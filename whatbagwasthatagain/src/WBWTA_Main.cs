@@ -27,7 +27,7 @@ namespace whatbagwasthatagain.src
         {
             base.AssetsFinalize(api);
 
-            api.Logger.StoryEvent("loading wbwta");
+            // api.Logger.StoryEvent("loading wbwta");
         }
 
 
