@@ -36,13 +36,13 @@ namespace whatbagwasthatagain.src
             if (!capi.World.Player.InventoryManager.OpenedInventories.Any())
                 return;
 
-            if (capi.World.Player.InventoryManager.CurrentHoveredSlot == null || capi.World.Player.InventoryManager.CurrentHoveredSlot is not ItemSlotBackpackContent)
+            if (capi.World.Player.InventoryManager.CurrentHoveredSlot == null || capi.World.Player.InventoryManager.CurrentHoveredSlot is not ItemSlotBagContent)
                 return;
 
-            ItemSlotBackpackContent currentSlot = capi.World.Player.InventoryManager.CurrentHoveredSlot as ItemSlotBackpackContent;
+            ItemSlotBagContent currentSlot = capi.World.Player.InventoryManager.CurrentHoveredSlot as ItemSlotBagContent;
             InventoryPlayerBackPacks backpackInv = capi.World.Player.InventoryManager.GetOwnInventory(GlobalConstants.backpackInvClassName) as InventoryPlayerBackPacks;
 
-            int id = currentSlot.BackpackIndex;
+            int id = currentSlot.BagIndex;
             backpackInv.PerformNotifySlot(id);
         }
     }
